@@ -1,0 +1,62 @@
+html{
+	font-family: 'monospace', 'sans-serif';
+	font-size: 3vmin;
+}
+#navbar{
+	background-color: #008080;
+	background-attachment: fixed;
+	padding: 0.5vw;
+	left: 0;
+	top: 0;
+	display: block;
+	width: 100vw;
+	position: fixed;
+	overflow: hidden;
+	margin-top: 0;
+	box-shadow: 0.2vh 0.3vh 0.7vh #00b3b3;
+}
+.navbar_container{
+	display: inline;
+	position: relative;
+}
+.navitem{
+	display: inline-block;
+	margin-right: 2vw;
+	text-align: center;
+	padding: 0.3vmin;
+}
+.navitem a{
+	padding: 0.4vmin;
+	text-decoration: none;
+	text-align: center;
+	color: #F5F5F5;
+}
+#logo{
+	margin-left: 0;
+	margin-right: 58vw;
+	padding: 1vmin;
+	background-color: #333333;
+	mix-blend-mode: screen;
+	border-radius: 1vmin;
+}
+.navitem a:hover, .navitem a:focus{
+	border-bottom: 0.4vmin solid #00b3b3;
+	position: relative;
+}
+#logo a:hover{
+	border-bottom-color: transparent;
+	text-decoration: unset;
+}
+.top_btn{
+	background: transparent;
+	font-size: 3vw;
+	color: #1a1a1a;
+	position: fixed;
+	border: none;
+	border-radius: 1vmin;
+	right: 2vmin;
+	bottom: 2vmin;
+}
+.grid_home:after{
+	display: table;
+}
