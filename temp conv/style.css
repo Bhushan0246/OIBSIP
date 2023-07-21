@@ -1,0 +1,41 @@
+html{
+	background: linear-gradient(30deg, #ff7c4d, #ffb6f9);
+	background-repeat: no-repeat;
+	background-size: 60rem 45rem;
+	font-family: monospace, courier, cursive;
+	font-size: 4vmin;
+}
+#main{
+	display: inline-block;
+	padding: 2em;
+	line-height:5vmax;
+	vertical-align: middle;
+	margin-left: 30vw;
+	margin-top: 12vh;
+}
+.main_container{
+	border-end-end-radius: 30px;
+	border: double brown;
+}
+.input{
+	text-align: center;
+	color: #132020;
+	font-size: .8rem;
+	padding: .2rem;
+	border: none;
+	background-color: transparent;
+	border-bottom: .06rem dashed; brown;
+}
+.sub_but{
+	box-shadow: 0.09rem 0.09rem #d04949;
+	border-bottom: .05rem solid; brown;
+	border-radius: .2rem;
+}
+.sub_but:hover{
+	border-bottom: double #7a1f1f;
+	border-right: double #7a1f1f;
+}
+.sub_but:active{
+	box-shadow: 0.05rem 0.05rem #d04949;
+	transform: translateY(0.05rem);
+}

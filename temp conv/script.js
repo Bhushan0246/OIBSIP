@@ -1,0 +1,1 @@
+getElementById('result').style.color="red";
