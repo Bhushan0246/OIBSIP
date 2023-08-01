@@ -4,7 +4,7 @@ html{
 	scroll-behavior: smooth;
 }
 #home, #skills, #projects, #contact{
-	box-shadow: 0 0 2vmin #4d4d4d;
+	box-shadow: 0 1vmin 2vmin rgba(89, 89, 89, 0.7)
 }
 /*Navigation bar*/
 #navbar{
@@ -27,11 +27,12 @@ html{
 }
 .navitem{
 	display: inline-block;
-	margin-right: 2vw;
+	margin-right: 1vw;
 	text-align: center;
 	padding: 0.3vmin;
 }
 .navitem a{
+	letter-spacing: 0.25vmin;
 	padding: 0.4vmin;
 	text-decoration: none;
 	text-align: center;
@@ -45,7 +46,7 @@ html{
 	mix-blend-mode: screen;
 	border-radius: 1vmin;
 }
-.navitem a:hover, .navitem a:focus{
+.navitem a:hover{
 	color: #99ffe6;
 	border-bottom: 0.4vmin solid #99ffe6;
 	position: relative;
@@ -55,18 +56,6 @@ html{
 	text-decoration: unset;
 	color: #F5F5F5;
 }
-
-/*Move to top button
-.top_btn{
-	background: transparent;
-	font-size: 3vw;
-	color: #00b3b3;
-	position: fixed;
-	border: none;
-	border-radius: 1vmin;
-	right: 2vmin;
-	bottom: 2vmin;
-}	*/
 
 /*Home or Introduction*/
 #home{
@@ -90,15 +79,19 @@ html{
 	clear: both;
 }
 .hom_itm_img{ 
-	left: 0;
+	text-align: center;
+	margin-left: 0;
 	width: 50%;
-	padding: 2rem;
+	padding: 8vh 4vmin;
+}
+.hom_itm_img img{
+	margin-top: 3rem;
 }
 .grid_home .intro{
 	font-size: 3.5vmin;
 	color: #808080;
 	line-height: 1.5;
-	background-color: #1a1a1a;
+	background-color: #0d0d0d;
 }
 .column .name{
 	font-size: 6vmin;
@@ -195,7 +188,8 @@ html{
 	color: #262626;
 	height: 101vh;
 	overflow-x: hidden;
-	background: linear-gradient(to top right, #ffccff 0%, #87cefa 80%);
+	background: linear-gradient(to top right, rgba(255, 204, 255, 0.6) 0%, rgba(135, 206, 250, 0.6) 90%);
+	background-blend-mode: screen;
 }
 .skill_container{
 	margin-left: 5%;
@@ -205,7 +199,7 @@ html{
 	text-align: center;
 	text-shadow: 0 0.2vmin 0.5vmin #00cc99;
 	color: #006666;
-	font-family: monospace;
+	font-family: monospace, sans-serif;
 }
 .skill_itm{
 	background: linear-gradient(to top right, #ffccff 5%, #87cefa 95%);
@@ -264,15 +258,15 @@ html{
 }
 /*Created projects appearence*/
 #projects{
-	background-color: #1d1d1d;
+	background-color: #262626;
 	box-sizing: border-box;
 }
 #projects > .head_title{
-	font-family: monospace;
+	font-family: monospace, sans-serif;
 	letter-spacing: 0.5vmin;
 	color: #ccc;
 	text-align: center;
-	text-shadow: 0 0 0.6vmin #fff;
+	text-shadow: 0 0 0.4vmin #fff;
 }
 .project_container{
 	padding: 5vmin 3vmin;
@@ -303,10 +297,10 @@ html{
 }
 
 .prj_item:hover{	
-	box-shadow: 0 0 2vmin #ccf2ff;
+	box-shadow: 0.5vmin 0 2vmin #ccf2ff;
 }
 .prj_item:hover .prj_title{
-	text-shadow: 0.1vmin 0.1vmin 0.3vmin #00e6e6;
+	text-shadow: 0.1vmin 0.1vmin 0.2vmin #e6e6e6;
 	border-bottom: 0.5vmin solid #000;
 }
 .shw_btn{
@@ -323,4 +317,83 @@ html{
 }
 .shw_btn:hover{
 	color: #008686;
+}
+/*Contact section*/
+#contact{
+	padding: 1vmin;
+	text-align: center;
+	background-color: #f2f2f2;
+}
+#contact .cont_title{
+	font-family: monospace, sans-serif;
+	letter-spacing: 0.5vmin;
+	color: #008080;
+	text-shadow: 0.2vmin 0.2vmin 0.4vmin #0cc0cc;
+}
+.cont_container{
+	column-count: 2;
+	padding: 1vmin 2vmin;
+	column-rule: 0.3vmin solid #999;
+}
+.cont_container .contact_img_container{
+	padding: 2vmin; 
+	text-align: center;
+}
+.cont_container .contact_img_container .cont_img{
+	user-select: none;
+	border-radius: 2vmin;
+	box-shadow: 0 0 4vmin #333;
+}
+.cont_details{
+	padding: 2vmin;
+}
+.cont_details .cont_form{
+	margin-left: 3vh;
+}
+.cont_form .info{
+	padding: 1%;
+	margin: 3vh 1vh;
+	color: #404040;
+	border: none;
+	border-bottom: 0.5vmin solid #00b3b3;
+	background-color: transparent;
+	font-size: 3vmin;
+	transition-duration: 300ms;
+}
+.cont_form .info:focus{
+	border: none;
+	border-bottom: 0.5vmin solid #008080;	
+}
+.cont_form .info_submit{
+	padding: 1vmin;
+	margin-top: 3vh;
+	border-radius: 2vmin;
+	background: transparent;
+	border: 0.3vmin solid #262626;
+	box-shadow: 0.5vmin 0.5vmin 1vmin #333;
+	font-size: 2.5vmin;
+	transition-duration: 100ms;
+}
+.cont_form .info_submit:active{
+	box-shadow: 0.1vmin 0.1vmin 0.4vmin #333;
+}
+.cont_details .cont_icon{
+	display: block;
+	padding: 2vmin 1vmin;
+}
+.cont_icon a{
+	padding: 0.8vmin 2vmin;
+	text-decoration: none;
+	color: #262626;
+	font-size: 4vmin;
+	transition-duration: 300ms;
+}
+.cont_icon a:hover{
+	padding: 0 1.6vmin;
+	color: #00b3b3;
+	font-size: 4.7vmin;
+}
+#contact .copyright{
+	padding: 1vmin 2vmin;
+	font-size: 2vmin;
 }

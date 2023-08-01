@@ -3,29 +3,28 @@
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<link rel="stylesheet" type="text/css" href="style.css">
-	<script type="text/javascript">
-		getElementsByTagName('span').innerHTML="hi";
-	</script>
-	<title>Temperature Convertor</title>
+	<link rel="stylesheet" type="text/css" href="style.css">	<title>Temperature Convertor</title>
 </head>
 <body>
 	<div id="main">
 		<form>
 		<fieldset class="main_container">
 			<legend>Temperature Converter</legend>
-		<input type="number" value="0" class="main_container_inp input" id="temp" required>
-		<select class="input" required>
+		<input type="number" value="25" class="main_container_inp input" id="temp" required>
+		<select class="input" id="which_temp">
 			<option value="">--select--</option>
-			<option id="cel">Celsius</option>
-			<option id="feh">Fahrenheit</option>
+			<option id="cel" value="cels">Celsius</option>
+			<option id="feh" value="fahren">Fahrenheit</option>
 		</select>
 		<br>
-		<label onclick="getElementsByTagName('label').style.color='red'">Output Temperature: </label>
-		<span id="result" class="input" name="output">00.0</span>
+		<label>Output Temperature: </label>
+		<span id="result" class="input" name="output">00.00</span>
 		<br>
-		<input type="submit" value="Convert" class="sub_but input">
+		<input type="submit" value="Convert" class="sub_but input" onclick="convert()">
 		</fieldset>
 		</form>
+
+	<script type="text/javascript" src="script.js"></script>
+
 </body>
 </html>
